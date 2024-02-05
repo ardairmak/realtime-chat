@@ -29,7 +29,6 @@ const SidebarChatList: FC<SidebarChatListProps> = ({ friends, sessionId }) => {
 
     const newFriendHandler = (newFriend: User) => {
       router.refresh();
-      console.log("received new user", newFriend);
       setActiveChats((prev) => [...prev, newFriend]);
     };
 
